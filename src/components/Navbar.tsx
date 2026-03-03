@@ -11,10 +11,9 @@ export default function Navbar() {
   const [scrollDepth, setScrollDepth] = useState(0);
   const pathname = usePathname();
 
-  // 3D parallax state
+  // Glow + entry animation state
   const navRef = useRef<HTMLElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
   const [isHovered, setIsHovered] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -53,20 +52,12 @@ export default function Navbar() {
     setIsOpen(false);
   }, [pathname]);
 
-  // Mouse handlers (adapted from GlowCard, intensity 3 instead of 8)
+  // Mouse handler for glow spotlight
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
       if (!navRef.current || isTouchDevice) return;
       const rect = navRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      setMousePos({ x, y });
-
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      const rotateY = ((x - centerX) / centerX) * 3;
-      const rotateX = ((centerY - y) / centerY) * 3;
-      setTilt({ rotateX, rotateY });
+      setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
     },
     [isTouchDevice]
   );
@@ -77,7 +68,6 @@ export default function Navbar() {
 
   const handleMouseLeave = useCallback(() => {
     setIsHovered(false);
-    setTilt({ rotateX: 0, rotateY: 0 });
   }, []);
 
   // Attach mouse listeners with passive option
@@ -109,17 +99,15 @@ export default function Navbar() {
     return pathname.startsWith(href);
   };
 
-  // Build nav transform
+  // Build nav transform (entry animation only, no hover tilt)
   const navTransform = !mounted
-    ? "translateY(-20px) rotateX(8deg) scale(0.95)"
-    : isTouchDevice
-      ? "none"
-      : `rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`;
+    ? "translateY(-20px) scale(0.95)"
+    : "none";
 
   // Build transition string
   const navTransition = !entryComplete
     ? "transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease-out, background 0.5s ease-out, border-color 0.5s ease-out"
-    : `transform ${isHovered ? "0.1s" : "0.4s"} ease-out, box-shadow 0.5s ease-out, background 0.5s ease-out, border-color 0.5s ease-out`;
+    : "box-shadow 0.5s ease-out, background 0.5s ease-out, border-color 0.5s ease-out";
 
   // Dynamic shadow based on scroll depth
   const navShadow = `
@@ -130,7 +118,7 @@ export default function Navbar() {
   return (
     <div
       className="fixed top-0 left-0 right-0 z-50 flex justify-center pointer-events-none px-4 sm:px-6 pt-4"
-      style={{ perspective: "1200px" }}
+      style={!mounted ? { perspective: "1200px" } : undefined}
     >
       <nav
         ref={navRef}
@@ -146,9 +134,7 @@ export default function Navbar() {
         `}
         style={{
           transform: navTransform,
-          transformStyle: "preserve-3d",
           transition: navTransition,
-          willChange: "transform",
           boxShadow: navShadow,
           opacity: mounted ? 1 : 0,
         }}
@@ -170,16 +156,9 @@ export default function Navbar() {
 
         <div className="relative z-10 px-3 sm:px-5 lg:px-7">
           <div className="flex justify-between h-14 items-center">
-            {/* Logo — depth layer 1 (10px) */}
             <Link
               href="/"
               className="flex items-center shrink-0"
-              style={{
-                transform: isTouchDevice
-                  ? "none"
-                  : `translateZ(${isHovered ? 10 : 0}px)`,
-                transition: "transform 0.3s ease-out",
-              }}
             >
               <Image
                 src="/images/logo.png"
@@ -191,16 +170,7 @@ export default function Navbar() {
               />
             </Link>
 
-            {/* Desktop nav — depth layer 2 (20px) */}
-            <div
-              className="hidden md:flex items-center gap-1"
-              style={{
-                transform: isTouchDevice
-                  ? "none"
-                  : `translateZ(${isHovered ? 20 : 0}px)`,
-                transition: "transform 0.3s ease-out",
-              }}
-            >
+            <div className="hidden md:flex items-center gap-1">
               {links.map((link) => (
                 <Link
                   key={link.href}
@@ -218,16 +188,7 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              {/* Get Started — depth layer 3 (30px) */}
-              <div
-                className="ml-2 p-[1.5px] rounded-full bg-gradient-to-r from-purple-500 via-primary to-emerald-400"
-                style={{
-                  transform: isTouchDevice
-                    ? "none"
-                    : `translateZ(${isHovered ? 30 : 0}px)`,
-                  transition: "transform 0.3s ease-out",
-                }}
-              >
+              <div className="ml-2 p-[1.5px] rounded-full bg-gradient-to-r from-purple-500 via-primary to-emerald-400">
                 <Link
                   href="/contact"
                   className="block bg-primary text-white px-5 py-1.5 rounded-full text-sm font-medium hover:bg-primary-dark transition-all duration-300"

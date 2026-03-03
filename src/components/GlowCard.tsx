@@ -54,10 +54,11 @@ export default function GlowCard({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={handleMouseLeave}
         style={{
-          transform: isHovered
-            ? `rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg) translateY(-4px)`
-            : "rotateX(0deg) rotateY(0deg) translateY(0)",
-          transformStyle: "preserve-3d",
+          transform:
+            tiltIntensity > 0 && isHovered
+              ? `rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg) translateY(-4px)`
+              : "none",
+          transformStyle: tiltIntensity > 0 ? "preserve-3d" : undefined,
           transition: isHovered
             ? "transform 0.1s ease-out"
             : "transform 0.4s ease-out",
@@ -86,10 +87,10 @@ export default function GlowCard({
         {/* 3D depth: inner content pops forward */}
         <div
           className="relative z-10"
-          style={{
+          style={tiltIntensity > 0 ? {
             transform: isHovered ? "translateZ(30px)" : "translateZ(0)",
             transition: "transform 0.3s ease-out",
-          }}
+          } : undefined}
         >
           {children}
         </div>

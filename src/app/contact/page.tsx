@@ -62,7 +62,7 @@ export default function ContactPage() {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <GlowCard className="glass rounded-xl p-2">
+            <GlowCard className="glass rounded-xl p-2" tiltIntensity={0}>
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSe9yC6KHT99uhWxrkCJdjJHwiK-R6hPCCRZ9O59I-3uX7OL4g/viewform?embedded=true"
                 width="100%"

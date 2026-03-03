@@ -120,6 +120,7 @@ export default function PricingPage() {
                       : "glass"
                   }`}
                   glowColor={plan.highlighted ? "rgba(108, 60, 225, 0.3)" : "rgba(108, 60, 225, 0.15)"}
+                  tiltIntensity={0}
                 >
                   {plan.highlighted && (
                     <div className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
