@@ -195,3 +195,30 @@ html {
   animation: float-3d 12s ease-in-out infinite;
   will-change: transform;
 }
+
+/* Navbar 3D parallax */
+.nav-link-3d {
+  transition: transform 0.25s ease-out, color 0.3s, background-color 0.3s;
+  will-change: transform;
+}
+
+.nav-link-3d:hover {
+  transform: translateZ(15px) scale(1.05);
+}
+
+.navbar-glow {
+  background: radial-gradient(
+    circle,
+    rgba(108, 60, 225, 0.12) 0%,
+    rgba(108, 60, 225, 0.04) 40%,
+    transparent 70%
+  );
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+@media (pointer: coarse), (hover: none) {
+  .nav-link-3d:hover {
+    transform: none;
+  }
+}

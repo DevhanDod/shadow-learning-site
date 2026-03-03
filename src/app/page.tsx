@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-100 py-16 lg:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-100 pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
         {/* Particle background */}
         <FloatingParticles count={40} color="rgba(108, 60, 225, 0.2)" />
 
