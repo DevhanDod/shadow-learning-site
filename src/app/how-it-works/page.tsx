@@ -80,7 +80,7 @@ export default function HowItWorksPage() {
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <TextReveal
-            text="How Shadow Learning Works"
+            text="The Shadow Learning Method"
             as="h1"
             className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4"
             stagger={70}

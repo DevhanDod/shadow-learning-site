@@ -65,7 +65,7 @@ export default function HomePage() {
                     href="/how-it-works"
                     className="border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-medium hover:bg-primary hover:text-white transition-all duration-300 text-center"
                   >
-                    See How It Works
+                    See the Method
                   </Link>
                 </div>
               </ScrollReveal>
@@ -136,7 +136,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <TextReveal
-              text="How Shadow Learning Works"
+              text="The Shadow Learning Method"
               as="h2"
               className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4"
             />
@@ -177,7 +177,7 @@ export default function HomePage() {
                 href="/how-it-works"
                 className="text-primary font-medium hover:underline"
               >
-                Discover how it works &rarr;
+                Learn more about the method &rarr;
               </Link>
             </div>
           </ScrollReveal>
