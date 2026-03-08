@@ -25,9 +25,9 @@ export default function HowItWorksPage() {
       number: "01",
       title: "Choose a Scene",
       description:
-        "Browse our library of clips from popular movies and TV shows. Filter by difficulty level, accent, genre, or topic. Whether you love action films, comedies, or dramas, there is content that matches your interests and learning level.",
+        "Browse our library of clips from popular movies and TV shows. Filter by difficulty level, accent, genre, or topic. Whether you love action films, comedies, or dramas, there is content that matches your interests and skill level.",
       detail:
-        "Each clip is carefully selected and curated to feature clear dialogue that is useful for everyday English conversation.",
+        "Each clip is carefully selected and curated to feature clear dialogue that is useful for everyday conversation.",
       icon: "🎬",
     },
     {
@@ -45,14 +45,14 @@ export default function HowItWorksPage() {
       description:
         "Below each clip, you will see the exact sentence being spoken along with its meaning and contextual explanation. This helps you understand not just the words, but how and why they are used in that context.",
       detail:
-        "Vocabulary highlights and grammar notes are provided so you learn more than just pronunciation.",
+        "Vocabulary highlights and grammar notes are provided so you pick up more than just how words sound.",
       icon: "📖",
     },
     {
       number: "04",
       title: "Speak Along",
       description:
-        "Press the record button and say the sentence yourself. Try to match the native speaker's pronunciation, rhythm, and intonation as closely as possible. This is the shadowing technique used by language professionals.",
+        "Press the record button and say the sentence yourself. Try to match the native speaker's accent, rhythm, and intonation as closely as possible. This is the shadowing technique used by language professionals.",
       detail:
         "You can record multiple attempts and compare each one to track your improvement over time.",
       icon: "🎤",
@@ -61,7 +61,7 @@ export default function HowItWorksPage() {
       number: "05",
       title: "Get Instant Feedback",
       description:
-        "Our AI-powered pronunciation engine analyses your recording and compares it with the original. You get a detailed accuracy score showing exactly which words and sounds you nailed and which ones need more practice.",
+        "Our AI-powered speech analysis engine compares your recording with the original. You get a detailed accuracy score showing exactly which words and sounds you nailed and which ones need more practice.",
       detail:
         "The feedback includes word-level scoring, phoneme analysis, and specific suggestions for improvement.",
       icon: "🎯",
@@ -155,7 +155,7 @@ export default function HowItWorksPage() {
               <p className="text-gray-600 leading-relaxed mb-4">
                 <strong>Shadowing</strong> is a well-established language learning
                 method where you listen to a native speaker and immediately repeat
-                what they say, mimicking their pronunciation, rhythm, and
+                what they say, mimicking their accent, rhythm, and
                 intonation. It was originally developed by Professor Alexander
                 Arguelles and has been widely adopted by polyglots and language
                 professionals worldwide. Learn more about{" "}
@@ -165,14 +165,14 @@ export default function HowItWorksPage() {
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium"
                 >
-                  how shadowing works in language learning
+                  the shadowing method in practice
                 </a>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Research shows that shadowing activates the motor cortex of the
                 brain, strengthening the neural pathways between listening and
                 speaking. This leads to faster improvement in fluency and
-                pronunciation compared to traditional methods like reading
+                spoken clarity compared to traditional methods like reading
                 textbooks or memorising vocabulary lists. See what{" "}
                 <a
                   href="https://www.reddit.com/r/languagelearning/comments/pbmp5o/is_shadowing_a_useful_method/"
@@ -180,14 +180,14 @@ export default function HowItWorksPage() {
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium"
                 >
-                  real language learners say about shadowing
+                  real learners say about this method
                 </a>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Shadow Learning takes this proven technique and enhances it with{" "}
-                <strong>AI-powered pronunciation feedback</strong>, making it
+                Our platform takes this proven technique and enhances it with{" "}
+                <strong>AI-powered speech feedback</strong>, making it
                 possible to practise effectively without a human tutor. Combined
-                with engaging content from movies and TV shows, learning becomes
+                with engaging content from movies and TV shows, the experience becomes
                 both effective and enjoyable.
               </p>
               <p className="text-gray-600 leading-relaxed">
@@ -217,7 +217,7 @@ export default function HowItWorksPage() {
               className="text-3xl font-bold text-white mb-4"
             />
             <p className="text-purple-100 text-lg mb-8">
-              Sign up for free and start improving your English pronunciation
+              Sign up for free and start improving your spoken fluency
               today with real movie and TV show clips.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
