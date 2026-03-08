@@ -223,66 +223,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="relative py-16 lg:py-20 bg-white overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <FloatingParticles count={12} color="rgba(108, 60, 225, 0.06)" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <TextReveal
-              text="What Our Users Say"
-              as="h2"
-              className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12"
-            />
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "I tried many English apps, but Shadow Learning is the first one that actually improved my pronunciation. Learning from movies makes it so enjoyable!",
-                name: "Maria S.",
-                role: "Spanish Speaker",
-                color: "bg-primary",
-              },
-              {
-                quote: "The instant pronunciation feedback is a game-changer. I can see exactly which words I need to work on. My confidence in speaking has grown so much.",
-                name: "Kenji T.",
-                role: "Japanese Speaker",
-                color: "bg-secondary",
-              },
-              {
-                quote: "I love that I can learn English while watching my favourite shows. It does not feel like studying at all. My IELTS speaking score improved by 1.5 bands!",
-                name: "Aisha R.",
-                role: "Arabic Speaker",
-                color: "bg-accent",
-              },
-            ].map((t, i) => (
-              <ScrollReveal key={t.name} delay={i * 150}>
-                <GlowCard className="glass rounded-xl p-6 h-full">
-                  <p className="text-gray-600 italic mb-4">
-                    &ldquo;{t.quote}&rdquo;
-                  </p>
-                  <div className="flex items-center gap-3">
-                    <div
-                      className={`w-10 h-10 ${t.color} rounded-full flex items-center justify-center text-white font-bold`}
-                    >
-                      {t.name[0]}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900 text-sm">
-                        {t.name}
-                      </p>
-                      <p className="text-gray-500 text-xs">{t.role}</p>
-                    </div>
-                  </div>
-                </GlowCard>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="relative py-16 lg:py-20 bg-gradient-to-br from-primary via-purple-600 to-indigo-700 overflow-hidden animated-gradient">
         <FloatingParticles count={25} color="rgba(255, 255, 255, 0.12)" />

@@ -23,7 +23,7 @@ export default function PricingPage() {
   const plans = [
     {
       name: "Free",
-      price: "Rs.0",
+      price: "£0",
       period: "forever",
       description: "Perfect for trying out Shadow Learning",
       features: [
@@ -44,7 +44,7 @@ export default function PricingPage() {
     },
     {
       name: "Premium",
-      price: "Rs.500",
+      price: "£25",
       period: "per month",
       description: "For serious learners who want real results",
       features: [
@@ -63,7 +63,7 @@ export default function PricingPage() {
     },
     {
       name: "Annual",
-      price: "Rs.6000",
+      price: "£100",
       period: "per year",
       description: "Best value — save 33% with annual billing",
       features: [

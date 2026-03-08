@@ -158,21 +158,48 @@ export default function HowItWorksPage() {
                 what they say, mimicking their pronunciation, rhythm, and
                 intonation. It was originally developed by Professor Alexander
                 Arguelles and has been widely adopted by polyglots and language
-                professionals worldwide.
+                professionals worldwide. Learn more about{" "}
+                <a
+                  href="https://www.livelingua.com/blog/shadowing/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  how shadowing works in language learning
+                </a>.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Research shows that shadowing activates the motor cortex of the
                 brain, strengthening the neural pathways between listening and
                 speaking. This leads to faster improvement in fluency and
                 pronunciation compared to traditional methods like reading
-                textbooks or memorising vocabulary lists.
+                textbooks or memorising vocabulary lists. See what{" "}
+                <a
+                  href="https://www.reddit.com/r/languagelearning/comments/pbmp5o/is_shadowing_a_useful_method/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  real language learners say about shadowing
+                </a>.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Shadow Learning takes this proven technique and enhances it with{" "}
                 <strong>AI-powered pronunciation feedback</strong>, making it
                 possible to practise effectively without a human tutor. Combined
                 with engaging content from movies and TV shows, learning becomes
                 both effective and enjoyable.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Want to see shadowing in action? Watch this{" "}
+                <a
+                  href="https://youtu.be/ljEP_ywBm7I?si=zFiFZdQ15X2pK2M4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  video demonstration of the shadowing technique
+                </a>.
               </p>
             </GlowCard>
           </ScrollReveal>
