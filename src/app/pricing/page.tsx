@@ -25,10 +25,10 @@ export default function PricingPage() {
       name: "Free",
       price: "£0",
       period: "forever",
-      description: "Perfect for trying out Shadow Learning",
+      description: "Perfect for trying out the platform",
       features: [
         "5 clips per day",
-        "Basic pronunciation scoring",
+        "Basic speech scoring",
         "Beginner difficulty clips",
         "Sentence meaning & context",
         "Community support",
@@ -49,7 +49,7 @@ export default function PricingPage() {
       description: "For serious learners who want real results",
       features: [
         "Unlimited clips per day",
-        "Advanced AI pronunciation scoring",
+        "Advanced AI speech scoring",
         "All difficulty levels",
         "Sentence meaning & context",
         "Detailed progress analytics",
@@ -71,7 +71,7 @@ export default function PricingPage() {
         "Save 33% compared to monthly",
         "Early access to new features",
         "Exclusive content library",
-        "Personalised learning path",
+        "Personalised study path",
         "Certificate of completion",
       ],
       notIncluded: [],
@@ -215,7 +215,7 @@ export default function PricingPage() {
             {[
               {
                 q: "Can I try Shadow Learning for free?",
-                a: "Yes! Our free plan gives you access to 5 clips per day with basic pronunciation scoring. No credit card required to sign up.",
+                a: "Yes! Our free plan gives you access to 5 clips per day with basic speech scoring. No credit card required to sign up.",
               },
               {
                 q: "Can I cancel my subscription at any time?",

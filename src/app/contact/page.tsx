@@ -38,7 +38,7 @@ export default function ContactPage() {
           />
           <ScrollReveal delay={300}>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Sign up to our email list to get early access, learning tips, and
+              Sign up to our email list to get early access, practice tips, and
               exclusive content. We would love to hear from you.
             </p>
           </ScrollReveal>
@@ -56,7 +56,7 @@ export default function ContactPage() {
               className="text-2xl font-bold text-gray-900 mb-4 text-center"
             />
             <p className="text-gray-600 text-center mb-8">
-              Subscribe to receive updates, pronunciation tips, and free learning
+              Subscribe to receive updates, speaking tips, and free
               resources directly to your inbox.
             </p>
           </ScrollReveal>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 content: (
                   <p className="text-gray-600 text-sm">
                     Follow us on Instagram, TikTok, and YouTube for daily
-                    pronunciation tips.
+                    speaking tips.
                   </p>
                 ),
                 glow: "rgba(255, 107, 53, 0.12)",
@@ -170,7 +170,7 @@ export default function ContactPage() {
             {[
               {
                 q: "How quickly will I see improvement?",
-                a: "Most users report noticeable improvement in pronunciation within 2-3 weeks of daily practice. Consistency is key — even 15 minutes a day can make a significant difference.",
+                a: "Most users report noticeable improvement in their accent within 2-3 weeks of daily practice. Consistency is key — even 15 minutes a day can make a significant difference.",
               },
               {
                 q: "Do I need any special equipment?",
@@ -178,7 +178,7 @@ export default function ContactPage() {
               },
               {
                 q: "Is Shadow Learning suitable for beginners?",
-                a: "Yes! We have clips at beginner, intermediate, and advanced levels. Beginners will find slow, clearly spoken clips that are perfect for starting out.",
+                a: "Absolutely! We have clips at beginner, intermediate, and advanced levels. Beginners will find slow, clearly spoken clips that are perfect for starting out.",
               },
             ].map((faq, i) => (
               <ScrollReveal key={faq.q} delay={i * 100}>

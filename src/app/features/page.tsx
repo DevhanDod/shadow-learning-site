@@ -38,9 +38,9 @@ export default function FeaturesPage() {
       icon: "🎯",
       title: "AI Pronunciation Scoring",
       description:
-        "Our advanced speech recognition AI listens to your pronunciation and provides detailed, word-by-word accuracy scoring. You will see exactly which words you pronounced well and which ones need more practice.",
+        "Our advanced speech recognition AI listens to your speech and provides detailed, word-by-word accuracy scoring. You will see exactly which words you said well and which ones need more practice.",
       highlights: [
-        "Word-level pronunciation accuracy scores",
+        "Word-level speech accuracy scores",
         "Phoneme-level analysis for detailed feedback",
         "Comparison with native speaker audio",
         "Specific improvement suggestions",
@@ -64,10 +64,10 @@ export default function FeaturesPage() {
       icon: "📈",
       title: "Progress Tracking & Analytics",
       description:
-        "Track your pronunciation improvement over time with detailed analytics. See your accuracy scores trend upwards as you practise more, and identify the specific sounds and words you find most challenging.",
+        "Track your speaking improvement over time with detailed analytics. See your accuracy scores trend upwards as you practise more, and identify the specific sounds and words you find most challenging.",
       highlights: [
         "Daily, weekly, and monthly progress charts",
-        "Pronunciation accuracy trends",
+        "Speaking accuracy trends",
         "Most improved and most challenging words",
         "Practice streak and consistency tracking",
       ],
@@ -90,7 +90,7 @@ export default function FeaturesPage() {
       icon: "🔄",
       title: "Playback Speed Control",
       description:
-        "Adjust the clip playback speed to match your learning needs. Slow it down to catch every sound or speed it up as you improve. This flexibility makes it easy to practise at a comfortable pace.",
+        "Adjust the clip playback speed to match your practice needs. Slow it down to catch every sound or speed it up as you improve. This flexibility makes it easy to practise at a comfortable pace.",
       highlights: [
         "0.5x, 0.75x, 1x, 1.25x, and 1.5x speed options",
         "Loop specific sections for focused practice",
@@ -113,14 +113,14 @@ export default function FeaturesPage() {
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <TextReveal
-            text="Powerful Features for Effective Learning"
+            text="Powerful Features for Effective Practice"
             as="h1"
             className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4"
             stagger={70}
           />
           <ScrollReveal delay={300}>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Everything you need to master English pronunciation, all in one
+              Everything you need to master spoken English, all in one
               platform. Built for learners who want real results.
             </p>
           </ScrollReveal>
@@ -194,12 +194,12 @@ export default function FeaturesPage() {
                     <td className="px-6 py-4 text-sm text-gray-500">Scripted dialogues</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Pronunciation Feedback</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">Speech Feedback</td>
                     <td className="px-6 py-4 text-sm text-green-600 font-medium">AI-powered word-level scoring</td>
                     <td className="px-6 py-4 text-sm text-gray-500">Basic or none</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 text-sm text-gray-700">Learning Method</td>
+                    <td className="px-6 py-4 text-sm text-gray-700">Practice Method</td>
                     <td className="px-6 py-4 text-sm text-green-600 font-medium">Shadowing (proven technique)</td>
                     <td className="px-6 py-4 text-sm text-gray-500">Repetition / flashcards</td>
                   </tr>
@@ -231,8 +231,8 @@ export default function FeaturesPage() {
               className="text-3xl font-bold text-white mb-4"
             />
             <p className="text-purple-100 text-lg mb-8">
-              Try Shadow Learning for free and see how effective clip-based
-              pronunciation practice can be.
+              Try it for free and see how effective clip-based
+              speech practice can be.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

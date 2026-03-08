@@ -35,7 +35,7 @@ export default function HomePage() {
               <ScrollReveal direction="up" delay={0}>
                 <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-4 py-1.5 rounded-full mb-6 glow-primary">
                   <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                  Now with AI pronunciation scoring
+                  Now with AI speech scoring
                 </div>
               </ScrollReveal>
 
@@ -49,7 +49,7 @@ export default function HomePage() {
               <ScrollReveal direction="up" delay={400}>
                 <p className="mt-6 text-lg text-gray-600 leading-relaxed">
                   Watch real TV and movie clips, read the subtitles, speak along,
-                  and instantly see how close your pronunciation is. The most
+                  and instantly see how close your accent is. The most
                   natural way to master spoken English.
                 </p>
               </ScrollReveal>
@@ -141,16 +141,16 @@ export default function HomePage() {
               className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4"
             />
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-              Three simple steps to start improving your English pronunciation
+              Three simple steps to start improving your spoken fluency
               today
             </p>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { num: "1", title: "Watch a Clip", desc: "Choose from hundreds of real movie and TV show scenes. Watch how native speakers naturally pronounce words and phrases." },
+              { num: "1", title: "Watch a Clip", desc: "Choose from hundreds of real movie and TV show scenes. Watch how native speakers naturally say words and phrases." },
               { num: "2", title: "Read & Understand", desc: "See the sentence displayed below the clip along with its meaning and context, so you understand exactly what is being said." },
-              { num: "3", title: "Speak & Compare", desc: "Press play and speak along. Our AI compares your pronunciation with the original and shows you how close you are." },
+              { num: "3", title: "Speak & Compare", desc: "Press play and speak along. Our AI compares your speech with the original and shows you how close you are." },
             ].map((step, i) => (
               <ScrollReveal key={step.num} delay={i * 150}>
                 <GlowCard className="bg-white p-6">
@@ -177,7 +177,7 @@ export default function HomePage() {
                 href="/how-it-works"
                 className="text-primary font-medium hover:underline"
               >
-                Learn more about how it works &rarr;
+                Discover how it works &rarr;
               </Link>
             </div>
           </ScrollReveal>
@@ -204,10 +204,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { emoji: "🎬", title: "Real Content", desc: "Learn from actual movies and TV shows, not scripted textbook dialogues. Hear how English is really spoken." },
-              { emoji: "🎯", title: "Instant Feedback", desc: "Get immediate pronunciation scoring powered by AI. Know exactly where to improve after every attempt." },
-              { emoji: "📖", title: "Context & Meaning", desc: "Every clip comes with the full sentence, meaning, and context so you learn vocabulary and grammar naturally." },
-              { emoji: "📈", title: "Track Progress", desc: "See your pronunciation accuracy improve over time with detailed progress tracking and analytics." },
+              { emoji: "🎬", title: "Real Content", desc: "Study with actual movies and TV shows, not scripted textbook dialogues. Hear how native speakers really talk." },
+              { emoji: "🎯", title: "Instant Feedback", desc: "Get immediate speech scoring powered by AI. Know exactly where to improve after every attempt." },
+              { emoji: "📖", title: "Context & Meaning", desc: "Every clip comes with the full sentence, meaning, and context so you pick up vocabulary and grammar naturally." },
+              { emoji: "📈", title: "Track Progress", desc: "See your speaking accuracy improve over time with detailed progress tracking and analytics." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 100}>
                 <GlowCard className="glass rounded-xl p-6 h-full">
@@ -243,8 +243,8 @@ export default function HomePage() {
               className="text-3xl sm:text-4xl font-bold text-white mb-4"
             />
             <p className="text-purple-100 text-lg mb-8">
-              Join thousands of learners who are improving their pronunciation
-              with Shadow Learning. Sign up today and get started for free.
+              Join thousands of learners who are improving their spoken fluency
+              with us. Sign up today and get started for free.
             </p>
             <Link
               href="/contact"
