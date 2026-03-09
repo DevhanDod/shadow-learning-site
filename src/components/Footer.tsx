@@ -71,6 +71,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} Shadow Learning. All rights reserved.</p>
+          <p className="mt-2">Last updated: 09/03/2026</p>
         </div>
       </div>
     </footer>
