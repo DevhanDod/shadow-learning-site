@@ -40,7 +40,7 @@ export default function HomePage() {
               </ScrollReveal>
 
               <TextReveal
-                text="Learn English by Shadowing Your Favourite Shows"
+                text="Learn English with Movies & Improve Your Pronunciation by Shadowing"
                 as="h1"
                 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight"
                 stagger={60}
@@ -48,9 +48,10 @@ export default function HomePage() {
 
               <ScrollReveal direction="up" delay={400}>
                 <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                  Watch real TV and movie clips, read the subtitles, speak along,
-                  and instantly see how close your accent is. The most
-                  natural way to master spoken English.
+                  Watch real TV and movie clips, read the subtitles, 
+                  speak along, and practice pronunciation with instant AI feedback. 
+                  Improve English pronunciation and speak English fluently,the most natural way to 
+                  master spoken English
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={500}>

@@ -80,15 +80,19 @@ export default function HowItWorksPage() {
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <TextReveal
-            text="The Shadow Learning Method"
+            text="How the Shadowing English Technique Works"
             as="h1"
             className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4"
             stagger={70}
           />
           <ScrollReveal delay={300}>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our five-step process makes it simple and enjoyable to improve your
-              English pronunciation using real entertainment content.
+              Shadow Learning uses English shadowing practice
+              a proven method used by language professionals
+              worldwide to help you learn English pronunciation
+              and speak confidently. Whether you are preparing
+              for IELTS speaking practice or simply want to improve
+              your spoken English, here is exactly how it works, step by step.
             </p>
           </ScrollReveal>
         </div>
